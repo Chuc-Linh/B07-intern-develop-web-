@@ -1,4 +1,4 @@
-# 📘 Giáo án: Lập trình Web  
+# 📘 Giáo án: Lập trình giao diện Web  
 
 Xin chào 👋, đây là **bài tập lập trình web** của một nhóm gồm 4 sinh viên năm 2 của sinh viên SGU
 Chúng mình là **[Vo Nhat Long, Nguyen Gia Bao, Vong Vien Phi, Lam Duy Chuc Linh]** ✨  
