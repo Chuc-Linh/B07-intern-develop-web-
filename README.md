@@ -1,6 +1,8 @@
-📘 Syllabus: Web Interface Programming
-Hello 👋, this is the web programming assignment of a group of 4 second-year SGU students.
-We are [Vo Nhat Long, Nguyen Gia Bao, Vong Vien Phi, Lam Duy Chuc Linh] ✨
+# 📘 Web Interface Programming
+
+Hello 👋, đây là **bài tập lập trình web** của một nhóm gồm 4 sinh viên năm 2 của sinh viên SGU
+Chúng mình là **[Vo Nhat Long, Nguyen Gia Bao, Vong Vien Phi, Lam Duy Chuc Linh]** ✨  
+Hiện tại tụi mình đang theo đuổi lĩnh vực **Lập trình Web** với niềm đam mê xây dựng các sản phẩm hữu ích và chia sẻ kiến thức đến cộng đồng. 
 ---
 
 ## 🎯 Learning Objectives
