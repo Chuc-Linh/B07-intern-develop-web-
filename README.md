@@ -1,8 +1,9 @@
 # 📘 Web Interface Programming
 
-Hello 👋, đây là **bài tập lập trình web** của một nhóm gồm 4 sinh viên năm 2 của sinh viên SGU
-Chúng mình là **[Vo Nhat Long, Nguyen Gia Bao, Vong Vien Phi, Lam Duy Chuc Linh]** ✨  
-Hiện tại tụi mình đang theo đuổi lĩnh vực **Lập trình Web** với niềm đam mê xây dựng các sản phẩm hữu ích và chia sẻ kiến thức đến cộng đồng. 
+Hello 👋  this is the web programming assignment of a group of 4 second-year SGU students.
+We are **[Vo Nhat Long, Nguyen Gia Bao, Vong Vien Phi, Lam Duy Chuc Linh]** ✨
+We are currently pursuing the field of Web Programming with a passion for building useful products and sharing knowledge with the community.
+
 ---
 
 ## 🎯 Learning Objectives
@@ -17,70 +18,57 @@ Currently, our focus is primarily on building the web interface without a databa
 ## 👥 End-User Functions
 
 ### 1.Account Management
-- **Đăng ký** tài khoản mới.  
-- **Đăng nhập / đăng xuất** (khi đăng nhập hiển thị thông tin cá nhân).  
+- **Register**  tài khoản mới.  
+- **Login / logout** (khi đăng nhập hiển thị thông tin cá nhân).  
 - **Quản lý thông tin cá nhân**: xem và chỉnh sửa.  
 
-### 2. Hiển thị & tìm kiếm sản phẩm
-- Hiển thị sản phẩm theo loại (có phân trang).  
-- Xem chi tiết sản phẩm (tên, hình ảnh, mô tả, giá bán...).  
-- **Tìm kiếm sản phẩm**:  
-  - Tìm cơ bản: theo tên sản phẩm.  
-  - Tìm nâng cao: kết hợp nhiều tiêu chí (tên, loại, khoảng giá).  
-
-### 3. Mua sản phẩm với giỏ hàng
-- Thêm sản phẩm vào giỏ hàng từ trang danh sách hoặc chi tiết.  
-- Cho phép thêm/bớt sản phẩm trong giỏ hàng.  
-- Chọn địa chỉ nhận hàng (từ tài khoản hoặc nhập mới).  
-- Chọn phương thức thanh toán:  
-  - Tiền mặt khi nhận hàng (mặc định).  
-  - Chuyển khoản.  
-  - Thanh toán trực tuyến.  
-- Xem lại đơn đặt hàng trước khi xác nhận mua.  
-
-### 4. Xem lịch sử mua hàng
-- Tra cứu lại các đơn hàng đã đặt trước đó.  
-
-
-## 👨‍💻 Chức năng cho Admin
-
-### 1. Giao diện quản trị
-- Trang đăng nhập riêng (không dùng chung với khách hàng).
-- Menu chức năng quản lý.
-
-### 2. Quản lý người dùng / khách hàng
-- Hiển thị danh sách khách hàng.
-- Reset mật khẩu.
-- Khóa / mở khóa tài khoản.
-
-### 3. Quản lý loại sản phẩm
-- Thêm, sửa, xóa hoặc ẩn loại sản phẩm.
-
-### 4. Quản lý sản phẩm
-- Thêm sản phẩm: loại, mã, tên, hình, mô tả.
-- Sửa sản phẩm (hiển thị thông tin trước khi sửa).
-- Xóa hoặc ẩn sản phẩm.
-
-### 5. Quản lý nhập hàng
-- Hiển thị & tìm kiếm phiếu nhập.
-- Thêm phiếu nhập: ngày, giá, số lượng.
-- Sửa phiếu nhập (nếu chưa hoàn thành).
-- Hoàn thành phiếu nhập.
-
-### 6. Quản lý giá bán
-- Nhập / sửa tỉ lệ % lợi nhuận theo loại hoặc theo sản phẩm.
-- Tra cứu giá vốn, lợi nhuận, giá bán.
-
-### 7. Quản lý đơn hàng
-- Tra cứu theo ngày hoặc tình trạng.
-- Xem chi tiết đơn hàng.
-- Cập nhật tình trạng: *mới đặt, đã xử lý, đã giao, hủy*.
-
-### 8. Quản lý tồn kho
-- Tra cứu số lượng tồn theo sản phẩm, loại.
-- Cảnh báo sản phẩm sắp hết hàng.
-- Thống kê nhập – xuất – tồn theo thời gian.
-
+### 2. Product Display & Search
+- Display products by category (with pagination).
+- View product details (name, image, description, selling price, etc.).
+- **Product search:**
+- Basic search: by product name.
+- Advanced search: combine multiple criteria (name, category, price range).
+### 3. Purchase with Cart
+- Add products to the cart from the listing page or detail page.
+- Allow adding/removing products in the cart.
+- Choose delivery address (from account or enter a new one).
+- Choose payment method:
+- Cash on delivery (default).
+- Bank transfer.
+- Online payment.
+- Review the order before confirming purchase.
+### 4. View Purchase History
+- Retrieve previously placed orders.
+##👨‍💻 Admin Features
+### 1. Admin Interface
+- Separate login page (not shared with customers).
+- Admin function menu.
+### 2. User / Customer Management
+- Display customer list.
+- Reset password.
+- Lock / unlock account.
+### 3. Product Category Management
+- Add, edit, delete, or hide product categories.
+### 4. Product Management
+- Add product: category, code, name, image, description.
+- Edit product (show current information before editing).
+- Delete or hide product.
+### 5. Import Management
+- Display & search import vouchers.
+- Add import vouchers: date, price, quantity.
+- Edit import vouchers (if not completed).
+- Complete import voucher.
+### 6. Pricing Management
+- Enter / edit profit margin by category or by product.
+- Look up cost price, profit, selling price.
+### 7. Order Management
+- Look up by date or status.
+- View order details.
+- Update status: new order, processed, delivered, canceled.
+### 8. Inventory Management
+- Look up stock quantity by product, category.
+- Alert for low stock products.
+- Statistics on imports – exports – stock over time.
+  
 ---
-
-✨ Cảm ơn bạn đã ghé thăm! Hãy cùng nhau học tập, chia sẻ và tạo ra những dự án thú vị nhé 🚀
+✨ Thanks for visiting! Let’s study, share, and create exciting projects together 🚀
