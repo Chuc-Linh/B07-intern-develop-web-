@@ -39,6 +39,8 @@ Currently, our focus is primarily on building the web interface without a databa
 - Review the order before confirming purchase.
 ### 4. View Purchase History
 - Retrieve previously placed orders.
+---
+
 ##👨‍💻 Admin Features
 ### 1. Admin Interface
 - Separate login page (not shared with customers).
