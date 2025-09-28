@@ -41,7 +41,7 @@ Currently, our focus is primarily on building the web interface without a databa
 - Retrieve previously placed orders.
 ---
 
-##👨‍💻 Admin Features
+## 👨‍💻 Admin Features
 ### 1. Admin Interface
 - Separate login page (not shared with customers).
 - Admin function menu.
