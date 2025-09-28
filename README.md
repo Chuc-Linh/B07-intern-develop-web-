@@ -1,16 +1,17 @@
-# 📘 Giáo án: Lập trình giao diện Web  
-
-Xin chào 👋, đây là **bài tập lập trình web** của một nhóm gồm 4 sinh viên năm 2 của sinh viên SGU
-Chúng mình là **[Vo Nhat Long, Nguyen Gia Bao, Vong Vien Phi, Lam Duy Chuc Linh]** ✨  
-Hiện tại tụi mình đang theo đuổi lĩnh vực **Lập trình Web** với niềm đam mê xây dựng các sản phẩm hữu ích và chia sẻ kiến thức đến cộng đồng. 
-
+# 📘 Coursework: Web Interface Programming
+Hello 👋, this is a web programming assignment from a group of four second-year students at SGU.
+We are [Vo Nhat Long, Nguyen Gia Bao, Vong Vien Phi, Lam Duy Chuc Linh] ✨
+We are passionate about Web Development, with a goal to build useful products and share knowledge with the community.
 ---
 
-## 🎯 Mục tiêu học tập
- Hiện tại, chúng chủ yếu tập trung vào việc xây dựng giao diện web mà chưa liên quan đến database. Đây là nơi tôi lưu trữ, theo dõi và chia sẻ quá trình học tập của mình.
-- Thành thạo các công nghệ cốt lõi: **HTML, CSS**.  
-- Tiếp cận với **frameworks hiện đại** như React.  
-- Có khả năng **xây dựng website** và **ứng dụng web nhỏ** từ đầu.  
+🎯 Learning Objectives
+Currently, our focus is primarily on building the web interface without a database connection. This repository is where we store, track, and share our learning progress.
+
+Master core technologies: HTML, CSS.
+
+Gain exposure to modern frameworks like React.
+
+Be able to build websites and small web applications from scratch  
 
 ---
 # Điều mà tụi mình đạt được khi hoàn thành bài tập này
