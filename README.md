@@ -1,23 +1,20 @@
-# 📘 Coursework: Web Interface Programming
-Hello 👋, this is a web programming assignment from a group of four second-year students at SGU.
+📘 Syllabus: Web Interface Programming
+Hello 👋, this is the web programming assignment of a group of 4 second-year SGU students.
 We are [Vo Nhat Long, Nguyen Gia Bao, Vong Vien Phi, Lam Duy Chuc Linh] ✨
-We are passionate about Web Development, with a goal to build useful products and share knowledge with the community.
 ---
 
-🎯 Learning Objectives
+## 🎯 Learning Objectives
 Currently, our focus is primarily on building the web interface without a database connection. This repository is where we store, track, and share our learning progress.
 
-Master core technologies: HTML, CSS.
-
-Gain exposure to modern frameworks like React.
-
-Be able to build websites and small web applications from scratch  
+- Master core technologies: HTML, CSS.
+- Gain exposure to modern frameworks like React.
+- Be able to build websites and small web applications from scratch  
 
 ---
-# Điều mà tụi mình đạt được khi hoàn thành bài tập này
-## 👥 Chức năng cho Khách hàng (End-user)
+# Our Achievements Upon Completing This Assignment
+## 👥 End-User Functions
 
-### 1. Quản lý tài khoản
+### 1.Account Management
 - **Đăng ký** tài khoản mới.  
 - **Đăng nhập / đăng xuất** (khi đăng nhập hiển thị thông tin cá nhân).  
 - **Quản lý thông tin cá nhân**: xem và chỉnh sửa.  
