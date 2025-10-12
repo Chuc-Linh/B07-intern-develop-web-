@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quản trị web B07</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.admin-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f5faff;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 230px;
+    background-color: #000; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.logo h2 {
+    color: #00bfff;
+    letter-spacing: 1px;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+}
+.menu li {
+    margin: 20px -5px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    display: block;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+.menu a:hover {
+    background-color: #00bfff;
+    color: #000000;
+    border-left: 3px solid white;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #e6f3ff; 
+}
+.main-content h1 {
+    color: #000;
+    margin-bottom: 15px;
+}
+.main-content p {
+    color: #333;
+    font-size: 18px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Quản trị</h2>
+            </div>
+            <ul class="menu">
+                <li> <a href="sanpham.html"> Hàng nhập</a></li>
+                <li><a href="donhang.html"> Giá cả </a></li>
+                <li><a href="donkhach.html"> Đơn khách </a></li>
+                <li><a href="hangton.html"> Hàng tồn</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <h1>Chào mừng đến trang quản trị</h1>
+            <p>Chọn mục ở thanh bên trái để bắt đầu quản lý hệ thống.</p>
+        </main>
+    </div>
+
+
+    <section id="sanpham">
+    <h2>Quản lý sản phẩm</h2>
+    
+  </section>
+</body>
+</html>

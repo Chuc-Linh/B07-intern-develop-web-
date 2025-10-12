@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quản lý giá bán</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      background-color: #f5faff;
+    }
+
+    /* Sidebar */
+    .sidebar {
+    position: fixed;
+    top: 0;
+    width: 230px;
+    height: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+
+}
+
+.sidebar h2 {
+    color: #00bfff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .menu li {
+      margin: 20px 0;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: block;
+      border-left: 3px solid transparent;
+      transition: 0.3s;
+    }
+
+    .menu a:hover,
+    .menu a.active {
+      background-color: #00bfff;
+      color: #000;
+      border-left: 3px solid white;
+      font-weight: bold;
+    }
+
+    /* Main content */
+    .main-content {
+    margin-left: 230px; /* chừa chỗ cho sidebar */
+    padding: 30px;
+    background-color: #f8fbff;
+    flex:1;
+   
+    }
+
+    h1 {
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    /* Form & table */
+    .form-section {
+      background-color: #fff;
+      padding: 20px ;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #0000001a;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #00bfff;
+      color: #000;
+    }
+
+    input[type="number"] {
+      width: 100px;
+      text-align: center;
+    }
+
+    .btn {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00bfff;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #009acd;
+    }
+
+    .search-box {
+      margin-bottom: 15px;
+    }
+
+    .search-box input {
+      padding: 8px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #00bfff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Quản trị</h2>
+    <ul class="menu">
+             <li> <a href="sanpham.html"> Hàng nhập</a></li>
+                <li><a href="donhang.html"class ="active"> Giá cả </a></li>
+                <li><a href="donkhach.html"> Đơn khách </a></li>
+                <li><a href="hangton.html"> Hàng tồn</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <h1>Quản lý Giá Bán</h1>
+
+    <!-- Phần 1: Tỷ lệ lợi nhuận theo loại -->
+    <section class="form-section">
+      <h2>Thiết lập tỷ lệ % lợi nhuận theo loại sản phẩm</h2>
+      <table id="loaiTable">
+        <thead>
+          <tr>
+            <th>Loại sản phẩm</th>
+            <th>% Lợi nhuận</th>
+          </tr>
+        </thead>
+        <tbody>
+            <form>
+          <tr>
+            <td>Đồ uống</td>
+            <form> <td><input type="number" min="0" max="100" required onchange="capNhatGiaBan()"></td></form>
+          </tr>
+          <tr>
+            <td>Bánh ngọt</td>
+            <form> <td><input type="number" min="0" max="100" required onchange="capNhatGiaBan()"></td></form>
+          </tr>
+          <tr>
+            <td>Đồ ăn nhanh</td>
+            <form> <td><input type="number" min="0" max="100" required onchange="capNhatGiaBan()"></td></form>
+          </tr>
+          </form>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Phần 2: Danh sách sản phẩm -->
+    <section class="form-section">
+      <h2>Danh sách sản phẩm và giá bán</h2>
+
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Tìm theo tên loại..." oninput="timSanPham()">
+      </div>
+
+      <table id="productTable">
+        <thead>
+          <tr>
+            <th>Tên sản phẩm</th>
+            <th>Loại</th>
+            <th>Giá vốn (VNĐ)</th>
+            <th>% Lợi nhuận</th>
+            <th>Giá bán (VNĐ)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Trà sữa truyền thống</td>
+            <td>Đồ uống</td>
+            <td><input type="number" value="25000" min="0" onchange="capNhatGiaBan()"></td>
+            <td><input type="number" value="20" min="0" max="100" onchange="capNhatGiaBan()"></td>
+            <td class="gia-ban"></td>
+          </tr>
+          <tr>
+            <td>Bánh bông lan</td>
+            <td>Bánh ngọt</td>
+            <td><input type="number" value="15000" min="0" onchange="capNhatGiaBan()"></td>
+            <td><input type="number" value="25" min="0" max="100" onchange="capNhatGiaBan()"></td>
+            <td class="gia-ban"></td>
+          </tr>
+          <tr>
+            <td>Khoai tây chiên</td>
+            <td>Đồ ăn nhanh</td>
+            <td><input type="number" value="10000" min="0" onchange="capNhatGiaBan()"></td>
+            <td><input type="number" value="30" min="0" max="100" onchange="capNhatGiaBan()"></td>
+            <td class="gia-ban"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script>
+    // Cập nhật giá bán dựa vào giá vốn và % lợi nhuận
+    function capNhatGiaBan() {
+      const rows = document.querySelectorAll("#productTable tbody tr");
+      rows.forEach(row => {
+        const giaVon = parseFloat(row.cells[2].querySelector("input").value) || 0;
+        const loiNhuan = parseFloat(row.cells[3].querySelector("input").value) || 0;
+        const giaBan = giaVon * (1 + loiNhuan / 100);
+        row.querySelector(".gia-ban").textContent = giaBan.toLocaleString("vi-VN");
+      });
+    }
+
+    // Tra cứu sản phẩm theo tên
+    function timSanPham() {
+      const keyword = document.getElementById("search").value.toLowerCase();
+      document.querySelectorAll("#productTable tbody tr").forEach(row => {
+        const ten = row.cells[0].textContent.toLowerCase();
+        row.style.display = ten.includes(keyword) ? "" : "none";
+      });
+    }
+
+    // Tự động tính giá khi tải trang
+    window.onload = capNhatGiaBan;
+  </script>
+</body>
+</html>
